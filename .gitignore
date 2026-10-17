@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# 环境变量（含 API Key，切勿提交）
+.env
+
+# 运行时产物
+logs/
+artifacts/
+*.log
+
+# 已下载的数据集（体积大，按需放置）
+data/downloaded/
+data/*.jsonl
+!data/builtin/samples.jsonl
+
+# 原始数据集仓库与下载文件（可重新 clone/下载，见 DATA.md）
+data/NL4OPT/
+data/IndustryOR/
+data/or-bench-problems/
+data/IndustryOR.json
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
