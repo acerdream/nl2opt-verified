@@ -53,6 +53,8 @@ INIT → UNDERSTAND → MODEL → GENERATE → EXECUTE → VERIFY → REFLECT �
 
 ```powershell
 # Windows PowerShell
+# 首次使用请先执行：git config core.autocrlf false
+#   —— 否则 Windows 默认的 autocrlf=true 会覆盖 .gitattributes 的行尾规则
 $env:PYTHONPATH = "$PWD\src"
 
 python scripts\run_tests.py                # ① 自检（24/24 零依赖 smoke，无需 Docker/网络）
